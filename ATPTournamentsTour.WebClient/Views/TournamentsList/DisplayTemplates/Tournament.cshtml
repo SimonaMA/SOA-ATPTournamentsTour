@@ -1,0 +1,21 @@
+﻿@model ATPTournamentsTour.WebClient.Models.Api.Tournament
+<tr>
+    <td>
+        <img class="pastChampionPic" src="@Model.ImageUrl" alt="Artist pic" />
+    </td>
+    <td>
+        @Model.Date.ToShortDateString()
+    </td>
+    <td>
+        @Model.TournamentName
+    </td>
+    <td>
+        @Model.PastChampion
+    </td>
+    <td class="bold big">
+        $@Model.TicketPrice
+    </td>
+    <td>
+        <a class="btn-primary" type="button" asp-action="Detail" asp-route-tournamentId="@Model.TournamentId">PURCHASE DETAILS</a>
+    </td>
+</tr>

@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "ATPTournamentsTour.Payment": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

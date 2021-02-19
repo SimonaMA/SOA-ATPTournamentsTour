@@ -1,0 +1,26 @@
+﻿@model ATPTournamentsTour.WebClient.Models.View.CartItemViewModel
+
+<tr>
+    <td>@Model.TournamentName</td>
+    <td>@Model.Date.DateTime.ToShortDateString()</td>
+    <td class="bold">$@Model.TicketPrice</td>
+    <td>
+        <form asp-action="UpdateItem">
+            <input type="hidden" name="ItemId" value="@Model.ItemId" />
+            <select name="TicketAmount" class="w-25" asp-for="@Model.Quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button type="submit" class="filterButton">Update</button>
+        </form>
+    </td>
+    <td class="bold big">$@(Model.TicketPrice * Model.Quantity) </td>
+    <td>
+        <a asp-action="RemoveItem" asp-route-itemId="@Model.ItemId">
+            <img class="cancelIcon" src="~/img/times.svg" />
+        </a>
+    </td>
+</tr>

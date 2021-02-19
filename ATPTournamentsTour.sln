@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATPTournamentsTour.WebClient", "ATPTournamentsTour.WebClient\ATPTournamentsTour.WebClient.csproj", "{0848F9B8-B1CC-412F-9A8C-A09058575A1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F3632F51-056C-43C5-9E59-8D371E99C8BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATPTournamentsTour.TournamentsList", "ATPTournamentsTour.TournamentsList\ATPTournamentsTour.TournamentsList.csproj", "{E2C27A67-A664-4501-8045-C71F13924979}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATPTournamentsTour.Cart", "ATPTournamentsTour.Cart\ATPTournamentsTour.Cart.csproj", "{9A0F195E-5618-4732-A289-48C053A1A523}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATPTournamentsTour.Payment", "ATPTournamentsTour.Payment\ATPTournamentsTour.Payment.csproj", "{9FD9DB0D-2BD1-4E30-B853-29857D429A6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATPTournamentsTour.Messages", "ATPTournamentsTour.Messages\ATPTournamentsTour.Messages.csproj", "{809C1C06-CFD5-4743-A9C6-4DF95A99047E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0848F9B8-B1CC-412F-9A8C-A09058575A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0848F9B8-B1CC-412F-9A8C-A09058575A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0848F9B8-B1CC-412F-9A8C-A09058575A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0848F9B8-B1CC-412F-9A8C-A09058575A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2C27A67-A664-4501-8045-C71F13924979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2C27A67-A664-4501-8045-C71F13924979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2C27A67-A664-4501-8045-C71F13924979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2C27A67-A664-4501-8045-C71F13924979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A0F195E-5618-4732-A289-48C053A1A523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0F195E-5618-4732-A289-48C053A1A523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0F195E-5618-4732-A289-48C053A1A523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0F195E-5618-4732-A289-48C053A1A523}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD9DB0D-2BD1-4E30-B853-29857D429A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD9DB0D-2BD1-4E30-B853-29857D429A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD9DB0D-2BD1-4E30-B853-29857D429A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD9DB0D-2BD1-4E30-B853-29857D429A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809C1C06-CFD5-4743-A9C6-4DF95A99047E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809C1C06-CFD5-4743-A9C6-4DF95A99047E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809C1C06-CFD5-4743-A9C6-4DF95A99047E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809C1C06-CFD5-4743-A9C6-4DF95A99047E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2C27A67-A664-4501-8045-C71F13924979} = {F3632F51-056C-43C5-9E59-8D371E99C8BF}
+		{9A0F195E-5618-4732-A289-48C053A1A523} = {F3632F51-056C-43C5-9E59-8D371E99C8BF}
+		{9FD9DB0D-2BD1-4E30-B853-29857D429A6E} = {F3632F51-056C-43C5-9E59-8D371E99C8BF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57E1B7AE-99E6-4F8F-977C-CF0FD36BBE42}
+	EndGlobalSection
+EndGlobal

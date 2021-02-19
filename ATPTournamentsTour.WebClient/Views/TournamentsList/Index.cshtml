@@ -1,0 +1,43 @@
+﻿@model ATPTournamentsTour.WebClient.Models.View.TournamentsListModel
+
+@{
+    var categoryListItems = Model.Categories.Select(c =>
+        new SelectListItem { Value = c.CategoryId.ToString(), Text = c.CategoryName }
+    ).ToList();
+    categoryListItems.Insert(0, new SelectListItem { Text = "All" });
+}
+
+<div class="row mt-5 mb-3">
+    <form asp-action="SelectCategory" method="post">
+        <select asp-for="SelectedCategory" asp-items="categoryListItems"></select>
+        <button type="submit" class="filterButton">FILTER</button>
+    </form>
+</div>
+
+<div class="row">
+    @if (Model.Tournaments.Count() == 0)
+    {
+        <text>No tournaments were found.</text>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr class="columnHeader">
+                    <th></th>
+                    <th>DATE</th>
+                    <th>NAME</th>
+                    <th>PAST CHAMPION</th>
+                    <th>PRICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                @Html.DisplayFor(m => m.Tournaments)
+            </tbody>
+        </table>
+    }
+</div>
+
+@section Widget {
+    <partial name="_CartWidget" model="@Model.NumberOfItems" />
+}
